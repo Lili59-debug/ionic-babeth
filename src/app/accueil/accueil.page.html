@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Accueil</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon routerLink="/admin" name="cog"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item detail routerLink="/qui">
+    <ion-label>
+      Qui sommes-nous ?
+    </ion-label>
+  </ion-item>
+
+  <h1>Nos produits</h1>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-img routerLink="/rayons/epicerie_salee" src="../assets/img/vignette-epices.jpg" alt="Epices"
+          title="Photo by monicore from Pexels"></ion-img>
+        <p>Épicerie salée</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-viande.jpg" alt="viande" title="Photo by Angele J from Pexels"></ion-img>
+        <p>Viande, poissons, &oelig;ufs</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-choufleur.jpg" alt="Chou-fleur"
+          title="Image par Jordan Holiday de Pixabay"></ion-img>
+        <p>Fruits et légumes</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-hygiene.jpg" alt="Dentifrice solide"
+          title="Photo by Karolina Grabowska from Pexels"></ion-img>
+        <p>Cosmétiques</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-maison.jpg" alt="Produit d'entretien"
+          title="Photo by Karolina Grabowska from Pexels"></ion-img>
+        <p>Entretien de la maison</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-vin.jpg" alt="Boisson" title="Photo by Ylanite Koppens from Pexels">
+        </ion-img>
+        <p>Boissons</p>
+      </ion-col>
+
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-pain.jpg" alt="Pain" title="Photo from Pexels"></ion-img>
+        <p>Boulangerie - pâtisserie</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-yaourt.jpg" alt="Pot de yaourt" title="Photo by Burst from Pexels">
+        </ion-img>
+        <p>Produits laitiers et glaces</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-chocolat.jpg" alt="chocolat" title="Photo from Pexels"></ion-img>
+        <p>Épicerie sucrée, thé, confiseries, chocolat</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-fleurs.jpg" alt="fleurs" title="Photo by Secret Garden from Pexels">
+        </ion-img>
+        <p>Fleurs et plants</p>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-img src="../assets/img/vignette-fleurs.jpg" alt="livres" title="Photo by Secret Garden from Pexels">
+        </ion-img>
+        <p>Livres</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item detail routerLink="/adherer">
+    <ion-label>
+      Adhérer à l'association
+    </ion-label>
+  </ion-item>
+
+  <h1>Déjà adhérent ?</h1>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-text-center">
+
+
+        <ion-note>Les champs marqués d'un * sont obligatoires.</ion-note>
+
+
+        <ion-input color="secondary" placeholder="Login *" required=true></ion-input>
+
+        <ion-input color="secondary" placeholder="Mot de passe *" required=true type="password"></ion-input>
+
+
+
+        <ion-note routerLink="/oubli">Mot de passe oublié ?</ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button type="submit" expand="full" shape="round">Me connecter <ion-icon name="enter"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+  </ion-grid>
+
+
+
+</ion-content>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

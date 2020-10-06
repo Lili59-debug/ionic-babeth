@@ -1,0 +1,104 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Accès administrateur</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item detail routerLink="/produits">
+    <ion-label>
+      Accéder au catalogue des produits
+    </ion-label>
+  </ion-item>
+
+  <h1>Ajouter un produit</h1>
+  <div class="ion-text-center">
+    <ion-note>Les champs marqués d'un * sont obligatoires.</ion-note>
+  </div>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <ion-item>
+          <ion-label position="stacked">Nom du produit *</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked"> Nom du producteur *</ion-label>
+          <ion-select placeholder="Votre choix">
+            <ion-select-option value="Farid Agri">Farid Agri</ion-select-option>
+            <ion-select-option value="Hélène Présure">Hélène Présure</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Description</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Prix *</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked"> Catégorie *</ion-label>
+          <ion-select placeholder="Votre choix">
+            <ion-select-option value="viande">viande</ion-select-option>
+            <ion-select-option value="cosmetiques">cosmetiques</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Référence</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Nombre de produits en stock</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked"> Unité</ion-label>
+          <ion-select placeholder="Votre choix">
+            <ion-select-option value="piece">Pièce</ion-select-option>
+            <ion-select-option value="kg">kg</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked"> TVA</ion-label>
+          <ion-select placeholder="Votre choix">
+            <ion-select-option value="5.5">5.5</ion-select-option>
+            <ion-select-option value="20">20</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Ajouter une photo *</ion-label>
+          <ion-input id="file" type="file"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Publié</ion-label>
+          <ion-checkbox color="danger" checked="true"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Mis en avant</ion-label>
+          <ion-checkbox color="danger"></ion-checkbox>
+        </ion-item>
+
+        <ion-button type="submit" expand="full" shape="round" color="danger">Ajouter</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<app-footer></app-footer>
+<router-outlet></router-outlet>
