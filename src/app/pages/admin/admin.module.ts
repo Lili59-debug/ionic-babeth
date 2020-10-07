@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { AdminPageRoutingModule } from './admin-routing.module';
 
 import { AdminPage } from './admin.page';
-import { FooterComponent } from '../footer/footer.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @NgModule({
   imports: [

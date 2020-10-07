@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { AdhererPageRoutingModule } from './adherer-routing.module';
 
 import { AdhererPage } from './adherer.page';
-import { FooterComponent } from '../footer/footer.component'
+import { FooterComponent } from '../../components/footer/footer.component'
 
 @NgModule({
   imports: [

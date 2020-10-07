@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { AccueilPageRoutingModule } from './accueil-routing.module';
 
 import { AccueilPage } from './accueil.page';
-import { FooterComponent } from '../footer/footer.component'
+import { FooterComponent } from '../../components/footer/footer.component'
 
 @NgModule({
   imports: [

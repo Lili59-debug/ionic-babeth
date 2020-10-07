@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { QuiPageRoutingModule } from './qui-routing.module';
 
 import { QuiPage } from './qui.page';
-import { FooterComponent } from '../footer/footer.component'
+import { FooterComponent } from '../../components/footer/footer.component'
 
 @NgModule({
   imports: [

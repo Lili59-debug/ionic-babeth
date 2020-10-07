@@ -3,10 +3,11 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
+          <ion-menu-toggle>
+            <ion-img routerLink="/" src="../assets/img/cropped-logo-texte-8.png"></ion-img>
+          </ion-menu-toggle>
 
-          <ion-img src="../assets/img/cropped-logo-texte-8.png"></ion-img>
-
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-menu-toggle *ngFor="let p of appPages; let i = index">
 
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
               detail="false" [class.selected]="selectedIndex == i">

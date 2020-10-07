@@ -4,52 +4,47 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'accueil',
-    pathMatch: 'full'
+    loadChildren: () => import('./pages/accueil/accueil.module').then( m => m.AccueilPageModule)
   },
   {
     path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
-    path: 'accueil',
-    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
+    loadChildren: () => import('./pages/folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: 'qui',
-    loadChildren: () => import('./qui/qui.module').then( m => m.QuiPageModule)
+    loadChildren: () => import('./pages/qui/qui.module').then( m => m.QuiPageModule)
   },
   {
     path: 'adherer',
-    loadChildren: () => import('./adherer/adherer.module').then( m => m.AdhererPageModule)
+    loadChildren: () => import('./pages/adherer/adherer.module').then( m => m.AdhererPageModule)
   },
   {
     path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+    loadChildren: () => import('./pages/admin/admin.module').then( m => m.AdminPageModule)
   },
   {
     path: 'produits',
-    loadChildren: () => import('./produits/produits.module').then( m => m.ProduitsPageModule)
+    loadChildren: () => import('./pages/produits/produits.module').then( m => m.ProduitsPageModule)
   },
   {
     path: 'rayons',
-    loadChildren: () => import('./rayons/rayons.module').then( m => m.RayonsPageModule)
+    loadChildren: () => import('./pages/rayons/rayons.module').then( m => m.RayonsPageModule)
   },
   {
     path: 'oubli',
-    loadChildren: () => import('./oubli/oubli.module').then( m => m.OubliPageModule)
+    loadChildren: () => import('./pages/oubli/oubli.module').then( m => m.OubliPageModule)
   },
   {
     path: 'cgv',
-    loadChildren: () => import('./cgv/cgv.module').then( m => m.CgvPageModule)
+    loadChildren: () => import('./pages/cgv/cgv.module').then( m => m.CgvPageModule)
   },
   {
     path: 'mentions-legales',
-    loadChildren: () => import('./mentions-legales/mentions-legales.module').then( m => m.MentionsLegalesPageModule)
+    loadChildren: () => import('./pages/mentions-legales/mentions-legales.module').then( m => m.MentionsLegalesPageModule)
   },
   {
     path: 'contact',
-    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+    loadChildren: () => import('./pages/contact/contact.module').then( m => m.ContactPageModule)
   }
 ];
 

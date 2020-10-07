@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { OubliPageRoutingModule } from './oubli-routing.module';
 
 import { OubliPage } from './oubli.page';
-import { FooterComponent } from '../footer/footer.component'
+import { FooterComponent } from '../../components/footer/footer.component'
 
 @NgModule({
   imports: [
