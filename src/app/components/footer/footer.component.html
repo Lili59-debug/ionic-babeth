@@ -1,9 +1,11 @@
 <ion-footer>
-  <ion-toolbar color="secondary">
+  <ion-toolbar color="secondary" class="ion-text-center">
 
-    <ion-title slot="start" size="small" class="ion-text-uppercase" routerLink="/cgv">CGV</ion-title>
-    <ion-title size="small" class="ion-text-uppercase" routerLink="/mentions-legales">Mentions légales</ion-title>
-    <ion-title slot="end" size="small" class="ion-text-uppercase" routerLink="/contact">Contact</ion-title>
+    <ion-router-link color="light" slot="start" class="ion-text-uppercase" href="/cgv">CGV</ion-router-link>
+
+    <ion-router-link color="light" class="ion-text-uppercase" href="/mentions-legales">Mentions légales</ion-router-link>
+    
+    <ion-router-link color="light"  slot="end" class="ion-text-uppercase" href="/contact">Contact</ion-router-link>
+    
   </ion-toolbar>
 </ion-footer>
-<router-outlet></router-outlet>

@@ -7,15 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AccueilPageRoutingModule } from './accueil-routing.module';
 
 import { AccueilPage } from './accueil.page';
-import { FooterComponent } from '../../components/footer/footer.component'
+import { ComposantsModule } from '../../composants.module'
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AccueilPageRoutingModule
+    AccueilPageRoutingModule,
+    ComposantsModule
   ],
-  declarations: [AccueilPage, FooterComponent]
+  declarations: [AccueilPage]
 })
 export class AccueilPageModule {}

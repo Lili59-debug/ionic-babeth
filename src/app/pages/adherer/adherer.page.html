@@ -1,13 +1,89 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Adhérer à l'association</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content>
-  Page adhérer à l'association.
+<ion-content class="ion-text-center">
+  <h1>Adhérer à l'association</h1>
+  <ion-text><p>Ça y est, vous avez pris votre décision. Rejoindre Merci Babeth ! est l'une de vos plus belles résolutions de l’année ! Nous serons heureux de vous y accueillir et de vous accompagner dans cette <strong>démarche de citoyen responsable</strong>.</p>
+    <ion-img id="panier" src="../assets/img/panier.jpg"></ion-img>  
+    <p>Merci de compléter et de valider notre formulaire d'adhésion en ligne.</p></ion-text>
+
+<ion-list>
+  <ion-radio-group>
+    <ion-grid>
+    <ion-row>
+    <ion-col size="6">
+    <ion-item lines="none">
+      <ion-label>Madame</ion-label>
+      <ion-radio value="Madame"></ion-radio>
+    </ion-item>
+  </ion-col>
+  <ion-col size="6">
+    <ion-item lines="none">
+      <ion-label>Monsieur</ion-label>
+      <ion-radio value="Monsieur"></ion-radio>
+    </ion-item>
+  </ion-col>
+</ion-row>
+</ion-grid>
+  </ion-radio-group>
+</ion-list>
+
+      
+    
+    <ion-item lines="none">
+      <ion-label position="stacked">Nom</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item lines="none">
+      <ion-label position="stacked">Prénom</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+  
+    <ion-item lines="none">
+      <ion-label position="stacked">Adresse</ion-label>
+      <ion-textarea required></ion-textarea>
+      
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="5">
+        <ion-item lines="none">
+          <ion-label position="stacked">Code postal</ion-label>
+          <ion-input required type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      
+    <ion-col size="7">
+      <ion-item lines="none">
+        <ion-label position="stacked">Ville</ion-label>
+        <ion-input required type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+      
+
+    </ion-row>
+
+    
+  
+    <ion-item lines="none">
+      <ion-label position="stacked">Numéro de téléphone</ion-label>
+      <ion-input required type="tel"></ion-input>
+    </ion-item>
+ 
+    <ion-item lines="none">
+      <ion-label position="stacked">Adresse email</ion-label>
+      <ion-input required type="email"></ion-input>
+    </ion-item>
+  
+
+    <ion-checkbox></ion-checkbox>
+    <ion-text>Je déclare souhaiter devenir membre de l’association Merci Babeth ! À ce titre, je déclare connaître
+      l’objet de l’association et en avoir accepté les statuts mis à ma disposition sur simple demande. J’accepte de
+      verser ma cotisation due pour l’année (de date à date). Le montant de la cotisation est au minimum de 5 €. Si je
+      le souhaite, je peux soutenir le fonctionnement de l’association en versant une cotisation supérieure.</ion-text>
+
+ 
+  <ion-button ion-button type="submit" expand="full" shape="round">Valider et payer</ion-button>
+
 </ion-content>
 <app-footer></app-footer>

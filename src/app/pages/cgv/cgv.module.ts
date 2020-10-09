@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CgvPageRoutingModule } from './cgv-routing.module';
 
 import { CgvPage } from './cgv.page';
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CgvPageRoutingModule
+    CgvPageRoutingModule,
+    ComposantsModule
   ],
   declarations: [CgvPage]
 })

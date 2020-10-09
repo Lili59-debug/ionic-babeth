@@ -1,14 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Accueil</ion-title>
-    <ion-buttons slot="end">
-      <ion-icon id="cog" routerLink="/admin" name="cog"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content>
 
@@ -71,7 +61,8 @@
         <p>Fleurs et plants</p>
       </ion-col>
       <ion-col class="ion-text-center" size-xs="6" size-md="4">
-        <ion-img src="../assets/img/vignette-livres.jpg" alt="livres" title="Photo de Rikka Ameboshi provenant de Pexels">
+        <ion-img src="../assets/img/vignette-livres.jpg" alt="livres"
+          title="Photo de Rikka Ameboshi provenant de Pexels">
         </ion-img>
         <p>Livres</p>
       </ion-col>
@@ -85,6 +76,9 @@
   </ion-item>
 
   <h1>Déjà adhérent ?</h1>
+  <div class="ion-text-center">
+    <ion-text>Connectez-vous</ion-text>
+  </div>
 
   <ion-grid>
     <ion-row class="ion-align-items-center">
@@ -97,23 +91,25 @@
         <ion-input color="secondary" placeholder="Login *" required=true></ion-input>
 
         <ion-input color="secondary" placeholder="Mot de passe *" required=true type="password"></ion-input>
+        
 
+          <ion-item lines="none">
+            <ion-checkbox></ion-checkbox>
+            <ion-label>Enregistrer le mot de passe</ion-label>
+          </ion-item>
+        
 
-
-        <ion-note routerLink="/oubli">Mot de passe oublié ?</ion-note>
+        
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col class="ion-text-center">
         <ion-button type="submit" expand="full" shape="round">Me connecter <ion-icon name="enter"></ion-icon>
         </ion-button>
+        <ion-note routerLink="/oubli">Mot de passe oublié ?</ion-note>
       </ion-col>
     </ion-row>
-
-
   </ion-grid>
-
-
 
 </ion-content>
 <app-footer></app-footer>

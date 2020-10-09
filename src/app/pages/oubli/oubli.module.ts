@@ -7,15 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { OubliPageRoutingModule } from './oubli-routing.module';
 
 import { OubliPage } from './oubli.page';
-import { FooterComponent } from '../../components/footer/footer.component'
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OubliPageRoutingModule
+    OubliPageRoutingModule,
+    ComposantsModule
   ],
-  declarations: [OubliPage, FooterComponent]
+  declarations: [OubliPage]
 })
 export class OubliPageModule {}

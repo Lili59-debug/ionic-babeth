@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RayonsPageRoutingModule } from './rayons-routing.module';
 
 import { RayonsPage } from './rayons.page';
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RayonsPageRoutingModule
+    RayonsPageRoutingModule,
+    ComposantsModule
   ],
   declarations: [RayonsPage]
 })

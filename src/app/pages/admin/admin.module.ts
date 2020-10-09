@@ -7,15 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AdminPageRoutingModule } from './admin-routing.module';
 
 import { AdminPage } from './admin.page';
-import { FooterComponent } from '../../components/footer/footer.component';
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AdminPageRoutingModule
+    AdminPageRoutingModule,
+    ComposantsModule
   ],
-  declarations: [AdminPage, FooterComponent]
+  declarations: [AdminPage]
 })
 export class AdminPageModule {}

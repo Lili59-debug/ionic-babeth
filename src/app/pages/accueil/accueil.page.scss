@@ -11,7 +11,12 @@ ion-img {
     margin: 5px 5px 10px 5px;
 }
 
-#cog {
-    font-size: 24px;
-    margin-right: 10px;
+ion-button {
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+ion-checkbox {
+    --border-radius:0;
+    --size: 14px;
 }

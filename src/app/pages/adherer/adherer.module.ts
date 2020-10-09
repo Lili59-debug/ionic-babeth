@@ -7,15 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AdhererPageRoutingModule } from './adherer-routing.module';
 
 import { AdhererPage } from './adherer.page';
-import { FooterComponent } from '../../components/footer/footer.component'
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AdhererPageRoutingModule
+    AdhererPageRoutingModule,
+    ComposantsModule
   ],
-  declarations: [AdhererPage, FooterComponent]
+  declarations: [AdhererPage]
 })
 export class AdhererPageModule {}

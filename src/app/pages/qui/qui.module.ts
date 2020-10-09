@@ -7,15 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { QuiPageRoutingModule } from './qui-routing.module';
 
 import { QuiPage } from './qui.page';
-import { FooterComponent } from '../../components/footer/footer.component'
+import { ComposantsModule } from '../../composants.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    QuiPageRoutingModule
+    QuiPageRoutingModule,
+    ComposantsModule
   ],
-  declarations: [QuiPage, FooterComponent]
+  declarations: [QuiPage]
 })
 export class QuiPageModule {}
